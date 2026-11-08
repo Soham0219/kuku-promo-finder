@@ -1,0 +1,109 @@
+EPISODE NUMBER: Episode 2
+EPISODE LOGLINE: The lawyer reveals that Mia has inherited everything, and Ethan's attempt to win her back ends with a threatening message.
+CONTINUITY NOTES: Picks up directly from Episode 1's reveal in the ballroom.
+
+--- SCRIPT START ---
+
+SCENE 01
+Scene heading: INT. GRAND BALLROOM - CONTINUOUS
+Scene start: 00:00.00
+Scene end: 00:31.70
+
+Actions and dialogue:
+
+**CAMERA:**
+Start: (00:00.00) | End: (00:05.20)
+Close-up on Mr. Hale as they speak.
+
+**MR. HALE (Grave):**
+Start: (00:00.10) | End: (00:04.90)
+"Your grandfather's will was read this morning. Everything he owned is yours."
+
+**CAMERA:**
+Start: (00:05.20) | End: (00:09.40)
+Close-up on Ethan as they speak.
+
+**ETHAN (Desperate, Pleading):**
+Start: (00:05.30) | End: (00:09.10)
+"Mia, I didn't know. You have to believe me."
+
+**CAMERA:**
+Start: (00:09.40) | End: (00:15.20)
+Close-up on Mia as they speak.
+
+**MIA (Cold, Commanding):**
+Start: (00:09.50) | End: (00:14.90)
+"You knew exactly who I was. You just never knew what I was worth."
+
+**CAMERA:**
+Start: (00:15.20) | End: (00:18.70)
+Close-up on Vanessa as they speak.
+
+**VANESSA (Furious, Shouting):**
+Start: (00:15.30) | End: (00:18.40)
+"This is a lie! She's a nobody!"
+
+**CAMERA:**
+Start: (00:18.70) | End: (00:21.20)
+Wide shot of the room.
+
+**ACTION:**
+Start: (00:18.70) | End: (00:21.20)
+Mia calmly hands Vanessa a napkin. The guests laugh as Vanessa's face burns red.
+
+**CAMERA:**
+Start: (00:21.20) | End: (00:23.70)
+Close-up on Mia as they speak.
+
+**MIA (Dry):**
+Start: (00:21.30) | End: (00:23.40)
+"You missed a spot."
+
+**CAMERA:**
+Start: (00:23.70) | End: (00:27.50)
+Close-up on Ethan as they speak.
+
+**ETHAN (Desperate):**
+Start: (00:23.80) | End: (00:27.20)
+"Give me one chance. I can fix this."
+
+**CAMERA:**
+Start: (00:27.50) | End: (00:31.70)
+Close-up on Mia as they speak.
+
+**MIA (Firm, Final):**
+Start: (00:27.60) | End: (00:31.40)
+"The board meets at nine tomorrow. Bring your resignation."
+
+SCENE 02
+Scene heading: INT. HOTEL CORRIDOR - NIGHT
+Scene start: 00:31.70
+Scene end: 00:39.40
+
+Actions and dialogue:
+
+**CAMERA:**
+Start: (00:31.70) | End: (00:35.20)
+Wide shot of the room.
+
+**ACTION:**
+Start: (00:31.70) | End: (00:35.20)
+Ethan walks out alone. His phone buzzes. A message from an unknown number: Delete the files. Now.
+
+**CAMERA:**
+Start: (00:35.20) | End: (00:37.40)
+Close-up on Ethan as they speak.
+
+**ETHAN (Whispering, Terrified):**
+Start: (00:35.30) | End: (00:37.10)
+"Who sent this?"
+
+**CAMERA:**
+Start: (00:37.40) | End: (00:39.40)
+Wide shot of the room.
+
+**SOUND FX:**
+Start: (00:37.40) | End: (00:39.40)
+Footsteps echo behind him, then a sudden silence and a cut to black.
+
+--- SCRIPT END ---

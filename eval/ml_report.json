@@ -1,0 +1,146 @@
+{
+  "validation": {
+    "formula": {
+      "picks": 7,
+      "found": 6,
+      "recall": 0.857,
+      "top1": 0.714,
+      "precision": 0.438,
+      "hook_hit": 0.5
+    },
+    "forest@0.25": {
+      "picks": 7,
+      "found": 5,
+      "recall": 0.714,
+      "top1": 0.857,
+      "precision": 0.375,
+      "hook_hit": 0.4
+    },
+    "forest@0.5": {
+      "picks": 7,
+      "found": 5,
+      "recall": 0.714,
+      "top1": 0.857,
+      "precision": 0.375,
+      "hook_hit": 0.4
+    },
+    "forest@0.75": {
+      "picks": 7,
+      "found": 5,
+      "recall": 0.714,
+      "top1": 0.571,
+      "precision": 0.375,
+      "hook_hit": 0.6
+    },
+    "forest@1.0": {
+      "picks": 7,
+      "found": 5,
+      "recall": 0.714,
+      "top1": 0.429,
+      "precision": 0.375,
+      "hook_hit": 0.8
+    },
+    "boosted@0.25": {
+      "picks": 7,
+      "found": 5,
+      "recall": 0.714,
+      "top1": 0.571,
+      "precision": 0.375,
+      "hook_hit": 0.4
+    },
+    "boosted@0.5": {
+      "picks": 7,
+      "found": 5,
+      "recall": 0.714,
+      "top1": 0.429,
+      "precision": 0.375,
+      "hook_hit": 0.4
+    },
+    "boosted@0.75": {
+      "picks": 7,
+      "found": 5,
+      "recall": 0.714,
+      "top1": 0.286,
+      "precision": 0.375,
+      "hook_hit": 0.4
+    },
+    "boosted@1.0": {
+      "picks": 7,
+      "found": 5,
+      "recall": 0.714,
+      "top1": 0.286,
+      "precision": 0.375,
+      "hook_hit": 0.4
+    },
+    "logistic@0.25": {
+      "picks": 7,
+      "found": 5,
+      "recall": 0.714,
+      "top1": 0.429,
+      "precision": 0.375,
+      "hook_hit": 0.6
+    },
+    "logistic@0.5": {
+      "picks": 7,
+      "found": 4,
+      "recall": 0.571,
+      "top1": 0.571,
+      "precision": 0.438,
+      "hook_hit": 0.5
+    },
+    "logistic@0.75": {
+      "picks": 7,
+      "found": 4,
+      "recall": 0.571,
+      "top1": 0.714,
+      "precision": 0.438,
+      "hook_hit": 0.75
+    },
+    "logistic@1.0": {
+      "picks": 7,
+      "found": 4,
+      "recall": 0.571,
+      "top1": 0.571,
+      "precision": 0.438,
+      "hook_hit": 1.0
+    }
+  },
+  "chosen_on_validation": {
+    "model": "forest",
+    "blend": 0.25
+  },
+  "test": {
+    "formula": {
+      "picks": 24,
+      "found": 16,
+      "recall": 0.667,
+      "top1": 0.625,
+      "precision": 0.52,
+      "hook_hit": 0.812
+    },
+    "forest@0.25": {
+      "picks": 24,
+      "found": 16,
+      "recall": 0.667,
+      "top1": 0.583,
+      "precision": 0.54,
+      "hook_hit": 0.875
+    },
+    "boosted@0.25": {
+      "picks": 24,
+      "found": 21,
+      "recall": 0.875,
+      "top1": 0.625,
+      "precision": 0.62,
+      "hook_hit": 0.714
+    },
+    "logistic@0.25": {
+      "picks": 24,
+      "found": 19,
+      "recall": 0.792,
+      "top1": 0.708,
+      "precision": 0.52,
+      "hook_hit": 0.737
+    }
+  }
+}

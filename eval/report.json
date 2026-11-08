@@ -1,0 +1,900 @@
+{
+  "default_weights": {
+    "hook": 0.24,
+    "cliffhanger": 0.22,
+    "energy": 0.2,
+    "clarity": 0.16,
+    "duration": 0.08
+  },
+  "default": {
+    "dev": {
+      "picks": 21,
+      "found": 16,
+      "recall": 0.762,
+      "hook_hit": 0.625,
+      "precision": 0.42,
+      "f1": 0.541,
+      "top1": 0.65,
+      "post_first_hits": 0.833,
+      "post_first_n": 6,
+      "details": [
+        {
+          "episode": 1,
+          "coverage": 0.54,
+          "found": true,
+          "hook_inside": true,
+          "by": "EP01-1"
+        },
+        {
+          "episode": 2,
+          "coverage": 0.92,
+          "found": true,
+          "hook_inside": true,
+          "by": "EP02-1"
+        },
+        {
+          "episode": 3,
+          "coverage": 0.49,
+          "found": false,
+          "hook_inside": false,
+          "by": "EP03-1"
+        },
+        {
+          "episode": 3,
+          "coverage": 0.0,
+          "found": false,
+          "hook_inside": false,
+          "by": null
+        },
+        {
+          "episode": 4,
+          "coverage": 0.8,
+          "found": true,
+          "hook_inside": true,
+          "by": "EP04-2"
+        },
+        {
+          "episode": 5,
+          "coverage": 0.8,
+          "found": true,
+          "hook_inside": true,
+          "by": "EP05-1"
+        },
+        {
+          "episode": 7,
+          "coverage": 0.94,
+          "found": true,
+          "hook_inside": false,
+          "by": "EP07-1"
+        },
+        {
+          "episode": 9,
+          "coverage": 0.87,
+          "found": true,
+          "hook_inside": false,
+          "by": "EP09-2"
+        },
+        {
+          "episode": 10,
+          "coverage": 0.78,
+          "found": true,
+          "hook_inside": false,
+          "by": "EP10-2"
+        },
+        {
+          "episode": 11,
+          "coverage": 0.35,
+          "found": false,
+          "hook_inside": false,
+          "by": "MX04"
+        },
+        {
+          "episode": 12,
+          "coverage": 0.54,
+          "found": true,
+          "hook_inside": true,
+          "by": "EP12-2"
+        },
+        {
+          "episode": 13,
+          "coverage": 0.29,
+          "found": false,
+          "hook_inside": false,
+          "by": "EP13-2"
+        },
+        {
+          "episode": 15,
+          "coverage": 0.79,
+          "found": true,
+          "hook_inside": true,
+          "by": "EP15-2"
+        },
+        {
+          "episode": 16,
+          "coverage": 0.68,
+          "found": true,
+          "hook_inside": true,
+          "by": "EP16-1"
+        },
+        {
+          "episode": 18,
+          "coverage": 0.72,
+          "found": true,
+          "hook_inside": true,
+          "by": "EP18-1"
+        },
+        {
+          "episode": 19,
+          "coverage": 0.83,
+          "found": true,
+          "hook_inside": false,
+          "by": "EP19-1"
+        },
+        {
+          "episode": 20,
+          "coverage": 1.0,
+          "found": true,
+          "hook_inside": false,
+          "by": "EP20-1"
+        },
+        {
+          "episode": 22,
+          "coverage": 0.85,
+          "found": true,
+          "hook_inside": false,
+          "by": "EP22-2"
+        },
+        {
+          "episode": 23,
+          "coverage": 0.63,
+          "found": true,
+          "hook_inside": true,
+          "by": "EP23-1"
+        },
+        {
+          "episode": 24,
+          "coverage": 0.67,
+          "found": true,
+          "hook_inside": true,
+          "by": "EP24-2"
+        },
+        {
+          "episode": 25,
+          "coverage": 0.0,
+          "found": false,
+          "hook_inside": false,
+          "by": null
+        }
+      ]
+    },
+    "test": {
+      "picks": 24,
+      "found": 16,
+      "recall": 0.667,
+      "hook_hit": 0.812,
+      "precision": 0.52,
+      "f1": 0.584,
+      "top1": 0.625,
+      "post_first_hits": 0.5,
+      "post_first_n": 4,
+      "details": [
+        {
+          "episode": 26,
+          "coverage": 0.51,
+          "found": true,
+          "hook_inside": true,
+          "by": "EP26-1"
+        },
+        {
+          "episode": 27,
+          "coverage": 0.0,
+          "found": false,
+          "hook_inside": false,
+          "by": null
+        },
+        {
+          "episode": 28,
+          "coverage": 0.9,
+          "found": true,
+          "hook_inside": true,
+          "by": "EP28-1"
+        },
+        {
+          "episode": 29,
+          "coverage": 0.72,
+          "found": true,
+          "hook_inside": false,
+          "by": "MX10"
+        },
+        {
+          "episode": 30,
+          "coverage": 0.68,
+          "found": true,
+          "hook_inside": true,
+          "by": "EP30-1"
+        },
+        {
+          "episode": 31,
+          "coverage": 0.8,
+          "found": true,
+          "hook_inside": true,
+          "by": "EP31-1"
+        },
+        {
+          "episode": 32,
+          "coverage": 0.59,
+          "found": true,
+          "hook_inside": false,
+          "by": "EP32-2"
+        },
+        {
+          "episode": 33,
+          "coverage": 0.79,
+          "found": true,
+          "hook_inside": true,
+          "by": "EP33-1"
+        },
+        {
+          "episode": 34,
+          "coverage": 0.0,
+          "found": false,
+          "hook_inside": false,
+          "by": null
+        },
+        {
+          "episode": 35,
+          "coverage": 0.58,
+          "found": true,
+          "hook_inside": true,
+          "by": "EP35-2"
+        },
+        {
+          "episode": 36,
+          "coverage": 0.0,
+          "found": false,
+          "hook_inside": false,
+          "by": null
+        },
+        {
+          "episode": 37,
+          "coverage": 0.43,
+          "found": false,
+          "hook_inside": false,
+          "by": "EP37-2"
+        },
+        {
+          "episode": 38,
+          "coverage": 0.03,
+          "found": false,
+          "hook_inside": false,
+          "by": "EP38-1"
+        },
+        {
+          "episode": 39,
+          "coverage": 0.77,
+          "found": true,
+          "hook_inside": true,
+          "by": "EP39-1"
+        },
+        {
+          "episode": 40,
+          "coverage": 0.97,
+          "found": true,
+          "hook_inside": true,
+          "by": "EP40-1"
+        },
+        {
+          "episode": 41,
+          "coverage": 0.48,
+          "found": false,
+          "hook_inside": false,
+          "by": "EP41-2"
+        },
+        {
+          "episode": 42,
+          "coverage": 0.66,
+          "found": true,
+          "hook_inside": true,
+          "by": "EP42-2"
+        },
+        {
+          "episode": 43,
+          "coverage": 0.21,
+          "found": false,
+          "hook_inside": false,
+          "by": "MX07"
+        },
+        {
+          "episode": 44,
+          "coverage": 0.8,
+          "found": true,
+          "hook_inside": true,
+          "by": "EP44-1"
+        },
+        {
+          "episode": 45,
+          "coverage": 0.27,
+          "found": false,
+          "hook_inside": false,
+          "by": "EP45-1"
+        },
+        {
+          "episode": 46,
+          "coverage": 0.81,
+          "found": true,
+          "hook_inside": true,
+          "by": "EP46-1"
+        },
+        {
+          "episode": 47,
+          "coverage": 0.83,
+          "found": true,
+          "hook_inside": true,
+          "by": "EP47-1"
+        },
+        {
+          "episode": 48,
+          "coverage": 1.0,
+          "found": true,
+          "hook_inside": true,
+          "by": "EP48-1"
+        },
+        {
+          "episode": 50,
+          "coverage": 1.0,
+          "found": true,
+          "hook_inside": false,
+          "by": "EP50-2"
+        }
+      ]
+    }
+  },
+  "tuned_weights": {
+    "hook": 0.24,
+    "cliffhanger": 0.22,
+    "energy": 0.2,
+    "clarity": 0.16,
+    "duration": 0.08
+  },
+  "tuned_episode_end_prior": 0.45,
+  "tuned": {
+    "dev": {
+      "picks": 21,
+      "found": 16,
+      "recall": 0.762,
+      "hook_hit": 0.625,
+      "precision": 0.42,
+      "f1": 0.541,
+      "top1": 0.65,
+      "post_first_hits": 0.833,
+      "post_first_n": 6,
+      "details": [
+        {
+          "episode": 1,
+          "coverage": 0.54,
+          "found": true,
+          "hook_inside": true,
+          "by": "EP01-1"
+        },
+        {
+          "episode": 2,
+          "coverage": 0.92,
+          "found": true,
+          "hook_inside": true,
+          "by": "EP02-1"
+        },
+        {
+          "episode": 3,
+          "coverage": 0.49,
+          "found": false,
+          "hook_inside": false,
+          "by": "EP03-1"
+        },
+        {
+          "episode": 3,
+          "coverage": 0.0,
+          "found": false,
+          "hook_inside": false,
+          "by": null
+        },
+        {
+          "episode": 4,
+          "coverage": 0.8,
+          "found": true,
+          "hook_inside": true,
+          "by": "EP04-2"
+        },
+        {
+          "episode": 5,
+          "coverage": 0.8,
+          "found": true,
+          "hook_inside": true,
+          "by": "EP05-1"
+        },
+        {
+          "episode": 7,
+          "coverage": 0.94,
+          "found": true,
+          "hook_inside": false,
+          "by": "EP07-1"
+        },
+        {
+          "episode": 9,
+          "coverage": 0.87,
+          "found": true,
+          "hook_inside": false,
+          "by": "EP09-2"
+        },
+        {
+          "episode": 10,
+          "coverage": 0.78,
+          "found": true,
+          "hook_inside": false,
+          "by": "EP10-2"
+        },
+        {
+          "episode": 11,
+          "coverage": 0.35,
+          "found": false,
+          "hook_inside": false,
+          "by": "MX04"
+        },
+        {
+          "episode": 12,
+          "coverage": 0.54,
+          "found": true,
+          "hook_inside": true,
+          "by": "EP12-2"
+        },
+        {
+          "episode": 13,
+          "coverage": 0.29,
+          "found": false,
+          "hook_inside": false,
+          "by": "EP13-2"
+        },
+        {
+          "episode": 15,
+          "coverage": 0.79,
+          "found": true,
+          "hook_inside": true,
+          "by": "EP15-2"
+        },
+        {
+          "episode": 16,
+          "coverage": 0.68,
+          "found": true,
+          "hook_inside": true,
+          "by": "EP16-1"
+        },
+        {
+          "episode": 18,
+          "coverage": 0.72,
+          "found": true,
+          "hook_inside": true,
+          "by": "EP18-1"
+        },
+        {
+          "episode": 19,
+          "coverage": 0.83,
+          "found": true,
+          "hook_inside": false,
+          "by": "EP19-1"
+        },
+        {
+          "episode": 20,
+          "coverage": 1.0,
+          "found": true,
+          "hook_inside": false,
+          "by": "EP20-1"
+        },
+        {
+          "episode": 22,
+          "coverage": 0.85,
+          "found": true,
+          "hook_inside": false,
+          "by": "EP22-2"
+        },
+        {
+          "episode": 23,
+          "coverage": 0.63,
+          "found": true,
+          "hook_inside": true,
+          "by": "EP23-1"
+        },
+        {
+          "episode": 24,
+          "coverage": 0.67,
+          "found": true,
+          "hook_inside": true,
+          "by": "EP24-2"
+        },
+        {
+          "episode": 25,
+          "coverage": 0.0,
+          "found": false,
+          "hook_inside": false,
+          "by": null
+        }
+      ]
+    },
+    "test": {
+      "picks": 24,
+      "found": 16,
+      "recall": 0.667,
+      "hook_hit": 0.812,
+      "precision": 0.52,
+      "f1": 0.584,
+      "top1": 0.625,
+      "post_first_hits": 0.5,
+      "post_first_n": 4,
+      "details": [
+        {
+          "episode": 26,
+          "coverage": 0.51,
+          "found": true,
+          "hook_inside": true,
+          "by": "EP26-1"
+        },
+        {
+          "episode": 27,
+          "coverage": 0.0,
+          "found": false,
+          "hook_inside": false,
+          "by": null
+        },
+        {
+          "episode": 28,
+          "coverage": 0.9,
+          "found": true,
+          "hook_inside": true,
+          "by": "EP28-1"
+        },
+        {
+          "episode": 29,
+          "coverage": 0.72,
+          "found": true,
+          "hook_inside": false,
+          "by": "MX10"
+        },
+        {
+          "episode": 30,
+          "coverage": 0.68,
+          "found": true,
+          "hook_inside": true,
+          "by": "EP30-1"
+        },
+        {
+          "episode": 31,
+          "coverage": 0.8,
+          "found": true,
+          "hook_inside": true,
+          "by": "EP31-1"
+        },
+        {
+          "episode": 32,
+          "coverage": 0.59,
+          "found": true,
+          "hook_inside": false,
+          "by": "EP32-2"
+        },
+        {
+          "episode": 33,
+          "coverage": 0.79,
+          "found": true,
+          "hook_inside": true,
+          "by": "EP33-1"
+        },
+        {
+          "episode": 34,
+          "coverage": 0.0,
+          "found": false,
+          "hook_inside": false,
+          "by": null
+        },
+        {
+          "episode": 35,
+          "coverage": 0.58,
+          "found": true,
+          "hook_inside": true,
+          "by": "EP35-2"
+        },
+        {
+          "episode": 36,
+          "coverage": 0.0,
+          "found": false,
+          "hook_inside": false,
+          "by": null
+        },
+        {
+          "episode": 37,
+          "coverage": 0.43,
+          "found": false,
+          "hook_inside": false,
+          "by": "EP37-2"
+        },
+        {
+          "episode": 38,
+          "coverage": 0.03,
+          "found": false,
+          "hook_inside": false,
+          "by": "EP38-1"
+        },
+        {
+          "episode": 39,
+          "coverage": 0.77,
+          "found": true,
+          "hook_inside": true,
+          "by": "EP39-1"
+        },
+        {
+          "episode": 40,
+          "coverage": 0.97,
+          "found": true,
+          "hook_inside": true,
+          "by": "EP40-1"
+        },
+        {
+          "episode": 41,
+          "coverage": 0.48,
+          "found": false,
+          "hook_inside": false,
+          "by": "EP41-2"
+        },
+        {
+          "episode": 42,
+          "coverage": 0.66,
+          "found": true,
+          "hook_inside": true,
+          "by": "EP42-2"
+        },
+        {
+          "episode": 43,
+          "coverage": 0.21,
+          "found": false,
+          "hook_inside": false,
+          "by": "MX07"
+        },
+        {
+          "episode": 44,
+          "coverage": 0.8,
+          "found": true,
+          "hook_inside": true,
+          "by": "EP44-1"
+        },
+        {
+          "episode": 45,
+          "coverage": 0.27,
+          "found": false,
+          "hook_inside": false,
+          "by": "EP45-1"
+        },
+        {
+          "episode": 46,
+          "coverage": 0.81,
+          "found": true,
+          "hook_inside": true,
+          "by": "EP46-1"
+        },
+        {
+          "episode": 47,
+          "coverage": 0.83,
+          "found": true,
+          "hook_inside": true,
+          "by": "EP47-1"
+        },
+        {
+          "episode": 48,
+          "coverage": 1.0,
+          "found": true,
+          "hook_inside": true,
+          "by": "EP48-1"
+        },
+        {
+          "episode": 50,
+          "coverage": 1.0,
+          "found": true,
+          "hook_inside": false,
+          "by": "EP50-2"
+        }
+      ]
+    }
+  },
+  "grid_trials": [
+    {
+      "weights": {
+        "hook": 0.24,
+        "cliffhanger": 0.22,
+        "energy": 0.2,
+        "clarity": 0.08,
+        "duration": 0.08
+      },
+      "episode_end_prior": 0.45,
+      "dev_f1": 0.553,
+      "dev_recall": 0.81,
+      "dev_precision": 0.42
+    },
+    {
+      "weights": {
+        "hook": 0.24,
+        "cliffhanger": 0.22,
+        "energy": 0.2,
+        "clarity": 0.08,
+        "duration": 0.08
+      },
+      "episode_end_prior": 0.55,
+      "dev_f1": 0.553,
+      "dev_recall": 0.81,
+      "dev_precision": 0.42
+    },
+    {
+      "weights": {
+        "hook": 0.24,
+        "cliffhanger": 0.22,
+        "energy": 0.2,
+        "clarity": 0.08,
+        "duration": 0.08
+      },
+      "episode_end_prior": 0.65,
+      "dev_f1": 0.553,
+      "dev_recall": 0.81,
+      "dev_precision": 0.42
+    },
+    {
+      "weights": {
+        "hook": 0.24,
+        "cliffhanger": 0.22,
+        "energy": 0.2,
+        "clarity": 0.16,
+        "duration": 0.08
+      },
+      "episode_end_prior": 0.45,
+      "dev_f1": 0.541,
+      "dev_recall": 0.762,
+      "dev_precision": 0.42
+    },
+    {
+      "weights": {
+        "hook": 0.24,
+        "cliffhanger": 0.22,
+        "energy": 0.2,
+        "clarity": 0.16,
+        "duration": 0.08
+      },
+      "episode_end_prior": 0.55,
+      "dev_f1": 0.541,
+      "dev_recall": 0.762,
+      "dev_precision": 0.42
+    },
+    {
+      "weights": {
+        "hook": 0.24,
+        "cliffhanger": 0.22,
+        "energy": 0.2,
+        "clarity": 0.16,
+        "duration": 0.08
+      },
+      "episode_end_prior": 0.65,
+      "dev_f1": 0.541,
+      "dev_recall": 0.762,
+      "dev_precision": 0.42
+    },
+    {
+      "weights": {
+        "hook": 0.24,
+        "cliffhanger": 0.3,
+        "energy": 0.08,
+        "clarity": 0.08,
+        "duration": 0.08
+      },
+      "episode_end_prior": 0.45,
+      "dev_f1": 0.541,
+      "dev_recall": 0.762,
+      "dev_precision": 0.42
+    },
+    {
+      "weights": {
+        "hook": 0.24,
+        "cliffhanger": 0.3,
+        "energy": 0.08,
+        "clarity": 0.08,
+        "duration": 0.08
+      },
+      "episode_end_prior": 0.55,
+      "dev_f1": 0.541,
+      "dev_recall": 0.762,
+      "dev_precision": 0.42
+    },
+    {
+      "weights": {
+        "hook": 0.24,
+        "cliffhanger": 0.3,
+        "energy": 0.08,
+        "clarity": 0.08,
+        "duration": 0.08
+      },
+      "episode_end_prior": 0.65,
+      "dev_f1": 0.541,
+      "dev_recall": 0.762,
+      "dev_precision": 0.42
+    },
+    {
+      "weights": {
+        "hook": 0.24,
+        "cliffhanger": 0.3,
+        "energy": 0.08,
+        "clarity": 0.16,
+        "duration": 0.08
+      },
+      "episode_end_prior": 0.45,
+      "dev_f1": 0.541,
+      "dev_recall": 0.762,
+      "dev_precision": 0.42
+    },
+    {
+      "weights": {
+        "hook": 0.24,
+        "cliffhanger": 0.3,
+        "energy": 0.08,
+        "clarity": 0.16,
+        "duration": 0.08
+      },
+      "episode_end_prior": 0.55,
+      "dev_f1": 0.541,
+      "dev_recall": 0.762,
+      "dev_precision": 0.42
+    },
+    {
+      "weights": {
+        "hook": 0.24,
+        "cliffhanger": 0.3,
+        "energy": 0.08,
+        "clarity": 0.16,
+        "duration": 0.08
+      },
+      "episode_end_prior": 0.65,
+      "dev_f1": 0.541,
+      "dev_recall": 0.762,
+      "dev_precision": 0.42
+    },
+    {
+      "weights": {
+        "hook": 0.24,
+        "cliffhanger": 0.38,
+        "energy": 0.14,
+        "clarity": 0.16,
+        "duration": 0.08
+      },
+      "episode_end_prior": 0.45,
+      "dev_f1": 0.541,
+      "dev_recall": 0.762,
+      "dev_precision": 0.42
+    },
+    {
+      "weights": {
+        "hook": 0.24,
+        "cliffhanger": 0.38,
+        "energy": 0.14,
+        "clarity": 0.16,
+        "duration": 0.08
+      },
+      "episode_end_prior": 0.55,
+      "dev_f1": 0.541,
+      "dev_recall": 0.762,
+      "dev_precision": 0.42
+    },
+    {
+      "weights": {
+        "hook": 0.24,
+        "cliffhanger": 0.38,
+        "energy": 0.14,
+        "clarity": 0.16,
+        "duration": 0.08
+      },
+      "episode_end_prior": 0.65,
+      "dev_f1": 0.541,
+      "dev_recall": 0.762,
+      "dev_precision": 0.42
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+EPISODE NUMBER: Episode 3
+EPISODE LOGLINE: The CCTV footage shows who planted the evidence, and Nora finds the kidnapper standing right behind her.
+CONTINUITY NOTES: The same night, back at the precinct.
+
+--- SCRIPT START ---
+
+SCENE 01
+Scene heading: INT. PRECINCT - CCTV ROOM - NIGHT
+Scene start: 00:00.00
+Scene end: 00:34.50
+
+Actions and dialogue:
+
+**CAMERA:**
+Start: (00:00.00) | End: (00:03.00)
+Wide shot of the room.
+
+**ACTION:**
+Start: (00:00.00) | End: (00:03.00)
+Nora rewinds the security footage to 10:42 p.m. Sam watches over her shoulder.
+
+**CAMERA:**
+Start: (00:03.00) | End: (00:07.20)
+Close-up on Sam as they speak.
+
+**SAM (Nervous):**
+Start: (00:03.10) | End: (00:06.90)
+"There. Someone's leaving a box in the evidence room."
+
+**CAMERA:**
+Start: (00:07.20) | End: (00:09.20)
+Wide shot of the room.
+
+**ACTION:**
+Start: (00:07.20) | End: (00:09.20)
+Nora freezes the frame and zooms in on the face.
+
+**CAMERA:**
+Start: (00:09.20) | End: (00:11.70)
+Close-up on Nora as they speak.
+
+**NORA (Shocked, Whispering):**
+Start: (00:09.30) | End: (00:11.40)
+"No. It can't be."
+
+**CAMERA:**
+Start: (00:11.70) | End: (00:14.20)
+Wide shot of the room.
+
+**ACTION:**
+Start: (00:11.70) | End: (00:14.20)
+The face on the screen is Leo, her partner.
+
+**CAMERA:**
+Start: (00:14.20) | End: (00:18.00)
+Close-up on Nora as they speak.
+
+**NORA (Devastated):**
+Start: (00:14.30) | End: (00:17.70)
+"Eight years. I trusted you with my life."
+
+**CAMERA:**
+Start: (00:18.00) | End: (00:21.00)
+Wide shot of the room.
+
+**ACTION:**
+Start: (00:18.00) | End: (00:21.00)
+Behind her, the door clicks shut. Leo stands in the doorway, his gun raised.
+
+**CAMERA:**
+Start: (00:21.00) | End: (00:24.80)
+Close-up on Leo as they speak.
+
+**LEO (Cold, Threatening):**
+Start: (00:21.10) | End: (00:24.50)
+"You should have stayed off this case, Nora."
+
+**CAMERA:**
+Start: (00:24.80) | End: (00:27.00)
+Close-up on Nora as they speak.
+
+**NORA (Defiant):**
+Start: (00:24.90) | End: (00:26.70)
+"Where is Ruby?"
+
+**CAMERA:**
+Start: (00:27.00) | End: (00:32.50)
+Close-up on Leo as they speak.
+
+**LEO (Menacing):**
+Start: (00:27.10) | End: (00:32.20)
+"You'll see her soon. Both of you will be in the same place."
+
+**CAMERA:**
+Start: (00:32.50) | End: (00:34.50)
+Wide shot of the room.
+
+**SOUND FX:**
+Start: (00:32.50) | End: (00:34.50)
+He cocks the gun. Cut to black.
+
+--- SCRIPT END ---

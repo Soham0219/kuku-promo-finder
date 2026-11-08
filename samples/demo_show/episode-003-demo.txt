@@ -1,0 +1,117 @@
+EPISODE NUMBER: Episode 3
+EPISODE LOGLINE: Mia finds money stolen from the pension fund under her late grandfather's name, and the board meeting turns into an arrest.
+CONTINUITY NOTES: The morning after Episode 2.
+
+--- SCRIPT START ---
+
+SCENE 01
+Scene heading: INT. WHITMORE HOLDINGS OFFICE - DAWN
+Scene start: 00:00.00
+Scene end: 00:25.90
+
+Actions and dialogue:
+
+**CAMERA:**
+Start: (00:00.00) | End: (00:04.00)
+Wide shot of the room.
+
+**ACTION:**
+Start: (00:00.00) | End: (00:04.00)
+Mia sits alone at her grandfather's desk at dawn, reading through old ledgers by lamplight.
+
+**CAMERA:**
+Start: (00:04.00) | End: (00:08.20)
+Close-up on Mia as they speak.
+
+**MIA (Soft, Reflective):**
+Start: (00:04.10) | End: (00:07.90)
+"Grandfather always said the truth hides in the numbers."
+
+**CAMERA:**
+Start: (00:08.20) | End: (00:11.20)
+Wide shot of the room.
+
+**ACTION:**
+Start: (00:08.20) | End: (00:11.20)
+She smiles at an old photo of the two of them, then turns the page.
+
+**CAMERA:**
+Start: (00:11.20) | End: (00:17.00)
+Close-up on Jay as they speak.
+
+**JAY (Urgent):**
+Start: (00:11.30) | End: (00:16.70)
+"Miss Whitmore, the auditors found something. Ten million moved out of the pension fund."
+
+**CAMERA:**
+Start: (00:17.00) | End: (00:19.20)
+Close-up on Mia as they speak.
+
+**MIA (Sharp):**
+Start: (00:17.10) | End: (00:18.90)
+"Moved by whom?"
+
+**CAMERA:**
+Start: (00:19.20) | End: (00:24.40)
+Close-up on Jay as they speak.
+
+**JAY (Nervous):**
+Start: (00:19.30) | End: (00:24.10)
+"It was signed with your grandfather's name. The day after he died."
+
+**CAMERA:**
+Start: (00:24.40) | End: (00:25.90)
+Wide shot of the room.
+
+**ACTION:**
+Start: (00:24.40) | End: (00:25.90)
+The pen snaps in Mia's hand.
+
+SCENE 02
+Scene heading: INT. BOARDROOM - DAY
+Scene start: 00:25.90
+Scene end: 00:45.00
+
+Actions and dialogue:
+
+**CAMERA:**
+Start: (00:25.90) | End: (00:32.10)
+Close-up on Ethan as they speak.
+
+**ETHAN (Smug):**
+Start: (00:26.00) | End: (00:31.80)
+"Before we start, the board should know their new chair is under investigation for fraud."
+
+**CAMERA:**
+Start: (00:32.10) | End: (00:34.60)
+Wide shot of the room.
+
+**ACTION:**
+Start: (00:32.10) | End: (00:34.60)
+Two police officers walk in and stop beside Mia's chair.
+
+**CAMERA:**
+Start: (00:34.60) | End: (00:37.50)
+Close-up on Officer as they speak.
+
+**OFFICER (Stern):**
+Start: (00:34.70) | End: (00:37.20)
+"Mia Whitmore, you're under arrest."
+
+**CAMERA:**
+Start: (00:37.50) | End: (00:43.00)
+Close-up on Mia as they speak.
+
+**MIA (Steady, Defiant):**
+Start: (00:37.60) | End: (00:42.70)
+"Then arrest me. But first, ask him who signed a dead man's name."
+
+**CAMERA:**
+Start: (00:43.00) | End: (00:45.00)
+Wide shot of the room.
+
+**SOUND FX:**
+Start: (00:43.00) | End: (00:45.00)
+An ominous sting, then a cut to black.
+
+--- SCRIPT END ---

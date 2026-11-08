@@ -1,0 +1,350 @@
+# Promo Finder configuration.
+# Nothing in here is specific to one show. Word lists cover common microdrama
+# genres (revenge, romance, CEO/billionaire, royalty, mafia, werewolf, family drama).
+# Tune weights here instead of editing code.
+
+promo:
+  min_duration: 20.0        # seconds (brief: 20-60 s)
+  max_duration: 60.0
+  ideal_duration: 35.0      # duration score peaks here
+  duration_tolerance: 18.0  # gaussian width for the duration score
+  hook_window: 3.0          # the hook must start within the first N seconds
+  cliff_window: 5.0         # beats ending in the last N seconds count as the cliffhanger
+  shot_snap: 1.5            # snap cuts to a camera-shot boundary if within N seconds
+  dead_air_gap: 5.0         # a gap longer than this with no dialogue/action is penalised
+  # Turning-point prior: an episode's own ending is written as a cliffhanger, so a clip that
+  # ends where the episode ends gets at least this cliffhanger score (less if it resolves).
+  episode_end_prior: 0.45        # tuned on episodes 1-25 (eval/evaluate.py --tune)
+  episode_end_marked_bonus: 0.10   # the script marks the ending (sting, "cliffhanger", cut to black)
+  episode_end_tolerance: 1.5
+  episode_end_marked_window: 6.0  # look for an ending sting in the last N seconds
+  per_episode: 2            # single-clip promos kept per episode
+  max_montages: 12          # multi-segment promos kept overall
+  montage_max_episode_gap: 3
+  overlap_iou: 0.3          # two promos overlapping more than this count as duplicates
+  post_first: 10            # size of the "post these first" list
+
+# Score(w) = sum of weight * component  (components are 0..1), normalised to 0-100.
+# Tuned by grid search on episodes 1-25 against editor picks; episodes 26-50 held out.
+# Hand-set starting point was hook .32, cliffhanger .30, energy .14, clarity .16.
+weights:
+  hook: 0.24
+  cliffhanger: 0.22
+  energy: 0.20
+  clarity: 0.16
+  duration: 0.08
+
+# Ranking adjustments for the "post first" list (acquisition funnel):
+# early-episode promos send new viewers to the start of the show.
+ranking:
+  early_episode_bonus: 4.0      # points added for promos from the first `early_episodes`
+  early_episodes: 10
+  montage_penalty: 2.0          # multi-segment promos need an editor; slightly lower priority
+  rule_violation_penalty: 3.0   # per hard-rule flag (hook after 3 s, cut inside a line, bad length)
+
+beat:
+  # Hook ("surprise") H = a*I + b*S + punchy + question
+  hook_intensity: 0.45
+  hook_stakes: 0.55
+  hook_punchy_bonus: 0.06       # short line (<= punchy_words)
+  punchy_words: 8
+  hook_question_bonus: 0.05
+  hook_continuation_penalty: 0.40   # line starts with "..." (mid-sentence)
+  hook_voiceover_penalty: 0.15
+  # Cliffhanger ("suspense") C = g*O + d*S + e*I + sfx - z*R
+  cliff_open: 0.40
+  cliff_stakes: 0.30
+  cliff_intensity: 0.25
+  cliff_resolution_penalty: 0.45
+  camera_text_weight: 0.35      # camera descriptions count less than action/dialogue
+  exclaim_bonus: 0.08
+  threat_min_stakes: 0.3        # a "will/before/next..." line only counts as a threat if stakes >= this
+  low_cue_resolution: 0.5       # a line delivered gently counts this much as "resolution"
+  # Intensity I: dialogue from the delivery cue; actions/sounds from their text.
+  intensity:
+    dialogue_base: 0.30
+    high_cue: 0.45
+    mid_cue: 0.20
+    low_cue: -0.20
+    action_base: 0.20
+    action_high_word: 0.35
+    action_stakes: 0.35
+    action_sudden: 0.15
+    sudden_words: [violent*, sudden*, loud*, deafening, abrupt*, explod*, shatter*]
+
+# Clip-level components (see docs/how_it_works.md).
+cliffhanger:
+  recency_floor: 0.6        # a beat at the start of the last-5-s window counts 60%, the final beat 100%
+  camera_factor: 0.8        # camera descriptions count less as the final beat
+  resolution_window: 2.5    # calm beats in the last N seconds weaken the cliffhanger
+  resolution_penalty: 0.3
+energy:
+  intensity_share: 0.75     # energy = 0.75*mean intensity + 0.25*talk density - dead-air penalty
+  talk_share: 0.25
+  talk_scale: 1.5           # talk density (share of time with speech) is scaled by this, capped at 1
+  gain: 1.15
+  gap_penalty_per_second: 0.1   # per second of dead air beyond promo.dead_air_gap
+
+# Editing rules for where a cut may land.
+cuts:
+  pre_roll: 0.2             # start this long before the hook beat when not snapping to a shot
+  post_roll: 0.4            # end this long after the last beat when not snapping to a shot
+  gap_before_next_line: 0.1
+  include_overlapping_line: 2.5   # pull the start back to include a line that began up to N s earlier
+  beat_overrun: 0.6         # a beat may run this far past the cut and still count as inside
+  line_edge_tolerance: 0.25 # a start cut within this of a line's end does not count as cutting it
+  flag_line_tolerance: 0.3  # the QC flag allows this much overlap at each edge of a line
+
+# Thresholds for quality flags and report wording.
+flags:
+  weak_hook: 0.5
+  weak_cliffhanger: 0.4
+  resolves: 0.5
+  weak_episode_score: 62    # an episode whose best promo scores below this has "no strong promo"
+  clear_for_new_viewer: 0.75
+  needs_context: 0.5
+
+# Delivery/emotion cues found in the parenthetical after a speaker name.
+# Matching is whole-word with common endings (s/ed/ing/ly...). A trailing * means "any ending".
+cues:
+  high: [furious, fury, shout*, scream*, livid, enrage*, rage, hysteri*, venom*, cruel*, vicious*,
+         outrage*, desperat*, horrifi*, horrified, devastat*, terrif*, panic*, frantic*, threaten*,
+         deadly, lethal*, menac*, gloat*, mock*, sneer*, scorn*, spite*, taunt*, sob*, weep*,
+         breathless, gasp*, alarm*, shock*, booming, imperious, thunderous, pierc*, betrayed,
+         heartbroken, choked, choking, brutal*, sadistic, crying out, screech*, agoniz*,
+         anguish*, savage*, malic*, vindictive, explosive, roar*]
+  mid: [cold*, stern*, bitter*, defiant*, dismissive*, arrogant*, smug*, condescend*, accus*,
+        resolut*, fierce*, firm*, urgent*, intense*, grave, demand*, command*, incredulous,
+        disbeliev*, trembl*, plead*, begg*, unwavering, steel*, powerful, harsh*, sharp*, tense,
+        uneasy, dread*, scathing, cutting, contempt*, disgust*, impatient*, nervous*, anxious*,
+        shaken, stunned, raw, accusing, sarcastic, challenging, warning, cautionary, protective,
+        uncompromising, dangerous]
+  low: [gentle, gently, soft*, tender*, warm*, calm*, playful*, amused, quiet*, fond*, peaceful*,
+        content, reflective, nostalgic, teasing, modest, relieved, sincere*, reassur*, comfort*,
+        droll, dry, matter-of-fact, instructional, knowledgeable, gracious, prompt, practical,
+        hopeful, affectionate, loving, serene]
+
+# Stakes categories (noisy-OR): S = 1 - prod(1 - weight * present)
+stakes:
+  violence:
+    weight: 0.85
+    words: [slap*, strike, strikes, striking, struck, punch*, hit, hits, whip, whips, whipped,
+            shove*, drag, drags, dragged, dragging, seize*, grab, grabs, grabbed, throw, throws,
+            threw, flung, fling*, smash*, slam*, crash*, explod*, explosion*, blast*, tackle*,
+            choke*, throat, club, clubs, bleed*, bled, blood*, wound*, gash*, knife, knives,
+            blade*, sword*, gun*, gunshot*, shot, shoot*, stab*, branding, ablaze, inferno,
+            flames, on fire, fight*, attack*, kick*, wrench*, snatch*, lacerat*, convuls*,
+            collapse*, strangl*, beaten, bruise*, burned, burnt, torture*]
+  danger:
+    weight: 0.8
+    words: [poison*, arsenic, dead, die, dies, dying, death, kill*, murder*, hang, hangs, hanged,
+            gallows, execut*, noose, prison*, dungeon*, prison cell, chained, chains, shackle*,
+            handcuff*, arrest*, threat*, disappear, witch*, trial, condemn*, sentenc*, ambush*, trap,
+            trapped, kidnap*, hostage*, overdose*, danger*, coffin*, buried, bury, gaol, jail*,
+            fever, "can't breathe", cannot breathe, cell, cells]
+  betrayal:
+    weight: 0.75
+    words: [betray*, lie, lied, liar, lying, stole, stolen, steal*, thief, thieves, planted, frame,
+            framed, cheat*, affair*, mistress, abandon*, discard*, disown*, revoke*, cast out,
+            traitor*, treason*, sold, deceiv*, scheme*, conspir*, forged, fake, behind my back,
+            you knew]
+  reveal:
+    weight: 0.8
+    words: [duke, duchess, heir, heiress, title, crest, rightful, impostor, imposter, alive, ghost,
+            ghosts, impossible, identity, who are you, secret*, the truth, real name, ceo,
+            billionaire, prince, princess, king, queen, alpha, mafia, pregnant, dna, all this time,
+            it was always, "it's you", "you're the", recogni*, i know who, long-lost]
+  humiliation:
+    weight: 0.6
+    words: [beggar*, worthless, nobody, plain, servant*, crawl*, kneel*, beneath, disgrace*,
+            embarrass*, humiliat*, dirt, mud, gutter, rat, filth*, penniless, trash,
+            pathetic, ugly, scrub, your place, know your place]
+  romance:
+    weight: 0.45
+    words: [marry, marries, married, marrying, wedding*, bride*, groom, husband*, wife, wives, vow,
+            vows, ring, love, loved, loves, kiss*, propos*, divorce*, fiancé*, fiance*, altar]
+  defiance:
+    weight: 0.35
+    words: [how dare, enough, never, will not, "won't", refuse*, get out, leave, choose your,
+            i will not, i am not]
+
+# Openness: an unresolved ending makes the viewer need the next part.
+openness:
+  question: 0.55            # line ends with "?"
+  trailing: 0.45            # line ends with "..." or a dash (cut-off thought)
+  sfx: 0.6                  # a sound/action cue like "ominous sting" or "cut to black"
+  threat_weight: 0.5
+  threat_words: [will, "i'll", going to, before, until, unless, or else, next, tomorrow, coming, if you,
+                 choose your, make you, pay for, soon, tonight, by dawn]
+  sfx_words: [cliffhanger, ominous, sting, gasp*, cut to black, cuts to black, crescendo,
+              suspense*, tension, tense, dread, alarm*, burst*, explod*, explosion*, crash*,
+              pounding, footsteps, bang*, slam*, unresolved, abrupt*]
+
+resolution:
+  words: [smile*, peaceful*, peace, together, thank*, safe, relief, relieved, laugh, laughs, hug*,
+          embrace*, rest, i accept, fades out, fade out, tender*, contented, comfort*, healed,
+          grateful, gratitude, serene*]
+
+clarity:
+  base: 0.6
+  continuation_max_gap: 1.5    # previous line by the same speaker ended this recently with "..."
+  voiceover_share: 0.4         # more than this share of lines in voice-over is penalised
+  no_dialogue_penalty: 0.2
+  stakes_threshold: 0.5        # a beat with stakes >= this "states what is at stake"
+  continuation_penalty: 0.35   # first line starts mid-sentence
+  voiceover_penalty: 0.25      # more than 40% of lines are voice-over
+  scene_jump_penalty: 0.12     # per extra scene inside one clip
+  conflict_bonus: 0.15         # two or more speakers
+  stakes_bonus: 0.15           # the clip states what is at stake
+  generic_openers: [then, and, but, so, "yes", "no", he, she, they, it, that, this]   # quoted: bare yes/no would load as true/false
+  opener_penalty: 0.08         # first line opens with a context-dependent word
+
+# Content an ad platform may restrict: promos containing these are flagged, not dropped.
+sensitive:
+  words: [naked chest, naked body, nude, shirtless, bare chest*, bare-chested, sheets pulled,
+          sensual*, passionate embrace,
+          sexual*, undress*, lingerie, gore, decapitat*, suicide, self-harm]
+
+montage:
+  hook_segment: [5.0, 22.0]     # min/max seconds of the opening segment
+  cliff_segment: [8.0, 35.0]    # min/max seconds of the closing segment
+  shared_character_bonus: 0.10
+  gap_penalty_per_episode: 0.04
+  same_episode_min_gap: 5.0    # two segments from one episode must be this far apart
+  pool_size: 3                 # best hook / cliffhanger segments kept per episode
+  pool_overlap_iou: 0.2
+  hook_min: 0.55               # a hook segment needs at least this hook score
+  cliff_min: 0.45              # a cliffhanger segment needs at least this cliffhanger score
+  hook_value: {hook: 0.6, energy: 0.2, clarity: 0.2}
+  cliff_value: {cliffhanger: 0.65, energy: 0.2, clarity: 0.15}
+
+llm:
+  provider: none            # none | gemini | groq | openai | anthropic | openai_compatible | ollama
+  model: ""                 # empty = provider default
+  base_url: ""              # for openai_compatible / ollama
+  blend: 0.5                # final = (1-blend)*rules + blend*llm
+  shortlist_per_episode: 6  # candidates shown to the LLM per episode
+  temperature: 0.2
+  max_retries: 2
+  pairwise_rank_top: 12     # rank the top N with pairwise comparisons (0 = off)
+
+# Mood tags for each promo (for ad targeting): stake categories found in the promo's lines.
+mood:
+  max_tags: 2
+  min_share: 0.25           # a mood needs at least this share of the promo's stake weight
+  labels: {violence: Action, danger: Danger, betrayal: Betrayal, reveal: Reveal, humiliation: Humiliation,
+           romance: Romance, defiance: Confrontation, humor: Comedy, fear: Horror}
+
+# Genre mode. A promo is built differently per genre: a thriller cuts on a threat or reveal,
+# a romance on an almost-kiss or confession, a comedy on an awkward beat, horror on a scare.
+# mode: auto | drama | thriller | horror | romance | comedy
+# Detection: share of lines (text + delivery cue) containing each genre's markers. The best
+# other genre wins only if its share >= min_rate and >= lead x the default genre's share.
+# Overrides are merged into this config; a list key ending in "+" adds items, "-" removes them.
+# The default genre has no overrides, so it scores exactly like the tuned config above.
+genre:
+  mode: auto
+  default: drama
+  detect:
+    min_rate: 0.08
+    lead: 1.2
+  profiles:
+    drama:
+      label: Drama
+      hint: ""
+      markers: [revenge, humiliat*, inherit*, heir, heiress, fortune, scandal*, disown*, betray*, divorce*,
+                mistress, stepmother, stepsister, mother-in-law, servant*, maid, mansion, estate, ceo,
+                billionaire, contract marriage, engagement, wedding*, bride*, groom, dowry, beggar*,
+                lady, lord, duke, duchess, king, queen, prince, princess, empire, shares, the board,
+                noble*, peasant*, family name, disgrace*]
+      overrides: {}
+
+    thriller:
+      label: Thriller
+      hint: "This show is a thriller: the best promos cut on a threat, a ticking clock or a reveal about who did it."
+      markers: [detective*, police, cop, cops, suspect*, evidence, killer*, murder*, corpse, crime*, alibi,
+                witness*, gun*, pistol*, bullet*, trigger, chase*, hostage*, ransom, bomb*, agent*, spy, spies,
+                surveillance, hacker*, encrypt*, tracker, tracking, fugitive*, interrogat*, forensic*,
+                fingerprint*, blackmail*, safe house, unknown number, burner phone, cctv, motive, accomplice*]
+      overrides:
+        weights: {hook: 0.24, cliffhanger: 0.28, energy: 0.18, clarity: 0.16, duration: 0.08}
+        stakes:
+          danger:
+            weight: 0.9
+            words+: [gun*, pistol*, bullet*, bomb*, hostage*, ransom, killer*, suspect*, chase*, fugitive*,
+                     blackmail*, trigger, countdown, timer, detonat*, armed]
+          reveal:
+            weight: 0.85
+            words+: [it was you, the killer, mole, double agent, who sent you, fingerprint*, dna match,
+                     the body, cctv, footage, the file, alibi]
+          romance: {weight: 0.3, words-: [ring]}   # "the phone rings" is not romance
+        openness:
+          sfx_words+: [phone rings, phone buzz*, sirens, siren, click, cocks, red dot, static, line goes dead,
+                       call ends, countdown, beep*, timer, door creak*, lights go out]
+          threat_words+: [or she dies, or he dies, you have, minutes, seconds, deadline, last chance]
+
+    horror:
+      label: Horror
+      hint: "This show is horror: the best promos open on something wrong and cut on a scare or a sound in the dark."
+      markers: [ghost*, haunt*, demon*, possess*, curse*, spirit, spirits, ritual*, exorcis*, creak*, flicker*, shadow*,
+                graveyard*, gravestone*, tombstone*, cemetery, crypt, undead, zombie*, vampire*, monster*, entity, apparition*, seance,
+                séance, ouija, basement, attic, cold breath, something moves, the dark, darkness]
+      overrides:
+        weights: {hook: 0.24, cliffhanger: 0.28, energy: 0.16, clarity: 0.16, duration: 0.08}
+        stakes:
+          fear:
+            weight: 0.85
+            words: [ghost*, haunt*, demon*, possess*, curse*, apparition*, entity, monster*, undead, zombie*,
+                    vampire*, something there, behind you, not alone, it's here, it's coming, the dark,
+                    darkness, scream*, blood*, corpse*, graveyard*]
+          danger: {weight: 0.85}
+        openness:
+          sfx_words+: [creak*, flicker*, whisper*, static, breathing, scratch*, knock*, silence, lights go out,
+                       lights die, door slowly opens, footsteps, thud, cold, shadow*, something moves]
+        cues:
+          mid+: [whisper*, hushed, terrified, frozen]
+
+    romance:
+      label: Romance
+      hint: "This show is a romance: the best promos cut on an almost-kiss, a confession or a jealous moment."
+      markers: [blush*, flirt*, crush on, has a crush, date, dating, lips, butterflies, heartbeat, heart races, love letter,
+                falling for, boyfriend, girlfriend, sweetheart, darling, chemistry, cuddl*, almost kiss,
+                leans in, inches apart, i love you, jealous*, first kiss, kiss*]
+      overrides:
+        stakes:
+          romance:
+            weight: 0.75
+            words+: [blush*, lips, heartbeat, confess*, i love you, falling for, almost kiss, leans in,
+                     inches apart, jealous*, first kiss, date, ex, rival, cheat*]
+        openness:
+          sfx_words+: [leans in, inches apart, heartbeat, holds her breath, holds his breath, eyes lock,
+                       lips almost, almost touch*, door opens]
+
+    comedy:
+      label: Comedy
+      hint: "This show is a comedy: the best promos open on an absurd or embarrassing moment and cut on an awkward beat or a setup before the punchline."
+      markers: [awkward*, embarrass*, giggl*, chuckl*, snort*, deadpan, sarcas*, ridiculous, absurd, oops,
+                whoops, clumsy, trips, tripped, slips, slipped, pratfall, mortified, sheepish*, exasperat*,
+                facepalm*, eye roll, rolls her eyes, rolls his eyes, record scratch, crickets, hilarious,
+                joke*, prank*, silly, flustered]
+      overrides:
+        weights: {hook: 0.24, cliffhanger: 0.20, energy: 0.24, clarity: 0.16, duration: 0.08}
+        beat:
+          hook_punchy_bonus: 0.10
+        stakes:
+          humor:
+            weight: 0.7
+            words: [awkward*, embarrass*, oops, whoops, ridiculous, absurd, clumsy, trips, tripped, slips,
+                    slipped, faceplant*, pratfall, spill*, mortified, disaster, chaos, prank*, sneez*,
+                    wrong person, wrong room, wrong name, did you just, please tell me, not again]
+          violence: {weight: 0.5}
+          danger: {weight: 0.5}
+        cues:
+          mid+: [deadpan, exasperat*, sheepish*, mortified, flustered, awkward*, giggl*, snort*, chuckl*,
+                 sarcas*, panicked, mock-serious]
+          low-: [playful*, teasing, amused, droll, dry]
+        resolution:
+          words-: [laugh, laughs]
+        openness:
+          sfx_words+: [record scratch, crickets, awkward silence, a beat, pause, blinks, stares, freezes,
+                       smash cut, cut to]

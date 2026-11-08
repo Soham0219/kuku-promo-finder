@@ -1,0 +1,5 @@
+default  dev  recall 0.76 (16/21)  hook_hit 0.62  precision 0.42  f1 0.54  top1 0.65  post-first hits 0.83 (n=6)
+default  test recall 0.67 (16/24)  hook_hit 0.81  precision 0.52  f1 0.58  top1 0.62  post-first hits 0.50 (n=4)
+tuned    dev  recall 0.76 (16/21)  hook_hit 0.62  precision 0.42  f1 0.54  top1 0.65  post-first hits 0.83 (n=6)
+tuned    test recall 0.67 (16/24)  hook_hit 0.81  precision 0.52  f1 0.58  top1 0.62  post-first hits 0.50 (n=4)
+tuned weights: {'hook': 0.24, 'cliffhanger': 0.22, 'energy': 0.2, 'clarity': 0.16, 'duration': 0.08} episode_end_prior: 0.45

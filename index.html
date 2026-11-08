@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Promo Finder: hooks and cliffhangers from microdrama scripts</title>
+  <meta name="description" content="Upload microdrama screenplays and get ranked 20 to 60 second promo clips that open on a hook and cut on a cliffhanger, with exact timestamps.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23121725'/%3E%3Crect x='7' y='9' width='18' height='3' rx='1.5' fill='%23FF6B5E'/%3E%3Crect x='7' y='14.5' width='18' height='3' rx='1.5' fill='%23FFC53D'/%3E%3Crect x='7' y='20' width='18' height='3' rx='1.5' fill='%234D8DFF'/%3E%3C/svg%3E">
+  <link rel="preload" href="vendor/fonts/archivo-wdth.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="site/style.css">
+</head>
+<body>
+  <a class="skip" href="#tool">Skip to the tool</a>
+
+  <header class="hero">
+    <nav class="nav wrap" aria-label="Main">
+      <a class="brand" href="#top" aria-label="Promo Finder home">
+        <span class="logo" aria-hidden="true"><i></i><i></i><i></i></span>
+        Promo Finder
+      </a>
+      <div class="nav-links">
+        <a href="#tool">Find promos</a>
+        <a href="#learn">Learn from posted promos</a>
+        <a href="https://github.com/Soham0219/kuku-promo-finder" rel="noopener">GitHub</a>
+      </div>
+    </nav>
+
+    <div class="hero-grid wrap" id="top">
+      <div class="hero-copy">
+        <h1>Find the promo hiding in every episode.</h1>
+        <p class="lede">Upload microdrama screenplays. Promo Finder reads every line, tries every 20 to 60 second clip, and ranks the ones that open on a hook and cut on a cliffhanger, with exact timestamps an editor can use.</p>
+        <div class="cta">
+          <button class="btn btn-primary" type="button" data-action="demo" data-demo="drama">Run it on the demo show</button>
+          <a class="btn btn-ghost" href="#tool">Upload your scripts</a>
+        </div>
+      </div>
+
+    </div>
+
+  </header>
+
+  <main>
+    <section class="tool wrap" id="tool" aria-labelledby="tool-title">
+      <div class="section-head">
+        <h2 id="tool-title">Try it on your own scripts</h2>
+        <p>Everything runs in this browser tab. Your screenplays are never uploaded to a server.</p>
+      </div>
+
+      <div class="tool-grid">
+        <form class="panel controls" id="controls" novalidate>
+          <label class="drop" id="drop" for="files">
+            <input type="file" id="files" accept=".txt,text/plain" multiple>
+            <span class="drop-icon" aria-hidden="true"></span>
+            <strong>Drop screenplay .txt files</strong>
+            <span>or click to choose. One file per episode.</span>
+          </label>
+          <p class="file-summary" id="file-summary">No files chosen.</p>
+          <div class="demo-pick" role="group" aria-labelledby="demo-pick-label">
+            <span id="demo-pick-label">Or try a made-up demo show</span>
+            <div class="demo-buttons">
+              <button class="btn btn-ghost-dark" type="button" data-action="demo" data-demo="drama">Drama</button>
+              <button class="btn btn-ghost-dark" type="button" data-action="demo" data-demo="thriller">Thriller</button>
+              <button class="btn btn-ghost-dark" type="button" data-action="demo" data-demo="comedy">Comedy</button>
+            </div>
+          </div>
+
+          <fieldset>
+            <legend>Promo rules</legend>
+            <div class="row2">
+              <label>Shortest clip, s<input type="number" id="min-d" value="20" min="5" max="120" step="1"></label>
+              <label>Longest clip, s<input type="number" id="max-d" value="60" min="10" max="180" step="1"></label>
+            </div>
+            <label>Promos kept per episode<input type="number" id="per-ep" value="2" min="1" max="5" step="1"></label>
+            <label>Genre
+              <select id="genre">
+                <option value="auto">Auto-detect from the scripts</option>
+                <option value="drama">Drama</option>
+                <option value="thriller">Thriller</option>
+                <option value="horror">Horror</option>
+                <option value="romance">Romance</option>
+                <option value="comedy">Comedy</option>
+              </select>
+            </label>
+            <label class="check"><input type="checkbox" id="joins" checked> Also build promos that join two moments</label>
+          </fieldset>
+
+          <details class="ai">
+            <summary>AI review (optional)</summary>
+            <p class="hint">An AI model re-rates the shortlist and writes the copy. It can only point at script lines, and every rule is checked again. Your key stays in this tab and is sent only to the provider you pick.</p>
+            <label>Provider
+              <select id="ai-provider">
+                <option value="none">Off: rules only</option>
+                <option value="gemini">Google Gemini</option>
+                <option value="openai">OpenAI</option>
+                <option value="anthropic">Anthropic Claude</option>
+                <option value="groq">Groq</option>
+                <option value="openai_compatible">Any OpenAI-compatible API</option>
+                <option value="ollama">Ollama on this computer</option>
+                <option value="mock">Test mode (fixed fake ratings)</option>
+              </select>
+            </label>
+            <div class="ai-fields" id="ai-fields" hidden>
+              <label>Model<input type="text" id="ai-model" placeholder="provider default" autocomplete="off"></label>
+              <label id="ai-key-row">API key<input type="password" id="ai-key" autocomplete="off" spellcheck="false"></label>
+              <label id="ai-base-row" hidden>Base URL<input type="url" id="ai-base" placeholder="https://host/v1"></label>
+            </div>
+          </details>
+
+          <div class="model-chip" id="model-chip" hidden><span id="model-chip-text">Using your learned model</span><button type="button" id="model-off">Turn off</button></div>
+          <button class="btn btn-primary wide" type="submit" id="run">Find promos</button>
+          <p class="form-msg" id="form-msg" role="alert"></p>
+        </form>
+
+        <div class="results" id="results" aria-live="polite">
+          <div class="empty" id="empty">
+            <h3>Results appear here</h3>
+            <p>Run the demo show, or drop in screenplays in the same format as the input pack: <code>**CAMERA:**</code>, <code>**ACTION:**</code> and character blocks, each with a <code>Start: (00:00.00) | End: (00:02.00)</code> line.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="learn" id="learn" aria-labelledby="learn-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="learn-title">Learn from promos you already posted</h2>
+          <p>Upload a list of promos your team posted before. A small model learns what your editors pick, is tested on episodes it has not seen, and can then rank promos for new shows.</p>
+        </div>
+        <div class="tool-grid">
+          <form class="panel controls" id="learn-form" novalidate>
+            <p class="file-summary" id="learn-scripts">Uses the scripts chosen above. None chosen yet.</p>
+            <label class="drop" id="labels-drop" for="labels">
+              <input type="file" id="labels" accept=".csv,text/csv">
+              <span class="drop-icon" aria-hidden="true"></span>
+              <strong>Drop a labels .csv file</strong>
+              <span>Columns: episode, start, end, label (1 = posted, 0 = rejected).</span>
+            </label>
+            <p class="file-summary" id="labels-summary">No labels file chosen. <button class="linkish" type="button" id="sample-labels">Download a sample file</button></p>
+            <fieldset>
+              <legend>Model</legend>
+              <label>Type
+                <select id="ml-kind">
+                  <option value="forest">Random forest</option>
+                  <option value="boosted">Boosted trees (like XGBoost)</option>
+                  <option value="logistic">Logistic regression</option>
+                </select>
+              </label>
+              <label>Test on
+                <select id="ml-test">
+                  <option value="0.5">The last half of the episodes</option>
+                  <option value="0.33">The last third of the episodes</option>
+                  <option value="0.25">The last quarter of the episodes</option>
+                </select>
+              </label>
+            </fieldset>
+            <button class="btn btn-primary wide" type="submit" id="train">Train and test</button>
+            <label class="linkish-file">Or load a saved model<input type="file" id="model-file" accept=".json,application/json"></label>
+            <p class="form-msg" id="learn-msg" role="alert"></p>
+          </form>
+          <div class="results" id="learn-results" aria-live="polite">
+            <div class="empty">
+              <h3>Test results appear here</h3>
+              <p>The model trains on the first episodes in your labels file and is tested on the rest, next to the plain formula, so you can see whether it actually helps.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <p><strong>Promo Finder</strong>, built by Soham Dadhich (MS23BTECH11030) for the Kuku AI Generalist assignment, Problem 1.</p>
+      <p>Open source on <a href="https://github.com/Soham0219/kuku-promo-finder" rel="noopener">GitHub</a>. Run from the command line with <code>python run.py --episodes &lt;folder&gt;</code>.</p>
+    </div>
+  </footer>
+
+  <template id="t-promo">
+    <article class="promo">
+      <header class="promo-head">
+        <span class="rank"></span>
+        <div class="promo-title">
+          <h4></h4>
+          <p class="promo-meta"></p>
+          <ul class="moods" aria-label="Mood"></ul>
+        </div>
+        <span class="score" title="Clip score, 0 to 100"></span>
+      </header>
+      <div class="tapes"></div>
+      <div class="script" role="group" aria-label="Script excerpt"></div>
+      <dl class="promo-facts">
+        <div><dt>Why it works</dt><dd class="why"></dd></div>
+        <div><dt>Why this rank</dt><dd class="reason"></dd></div>
+      </dl>
+      <ul class="flags" aria-label="Flags"></ul>
+    </article>
+  </template>
+
+  <script type="module" src="site/app.js"></script>
+</body>
+</html>

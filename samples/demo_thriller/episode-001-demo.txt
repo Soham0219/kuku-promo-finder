@@ -1,0 +1,118 @@
+EPISODE NUMBER: Episode 1
+EPISODE LOGLINE: Detective Nora Vale gets a call from an unknown number: a missing girl, a ransom, and sixty minutes to find her.
+CONTINUITY NOTES: First episode of the made-up thriller demo (written for the Promo Finder demo).
+
+--- SCRIPT START ---
+
+SCENE 01
+Scene heading: INT. POLICE PRECINCT - NIGHT
+Scene start: 00:00.00
+Scene end: 00:39.90
+
+Actions and dialogue:
+
+**CAMERA:**
+Start: (00:00.00) | End: (00:03.00)
+Wide shot of the room.
+
+**ACTION:**
+Start: (00:00.00) | End: (00:03.00)
+Detective Nora Vale works alone under a flickering desk lamp, case files spread across the desk.
+
+**CAMERA:**
+Start: (00:03.00) | End: (00:04.50)
+Wide shot of the room.
+
+**SOUND FX:**
+Start: (00:03.00) | End: (00:04.50)
+Her phone rings. Unknown number.
+
+**CAMERA:**
+Start: (00:04.50) | End: (00:06.00)
+Close-up on Nora as they speak.
+
+**NORA (Tired, Flat):**
+Start: (00:04.60) | End: (00:05.70)
+"Vale."
+
+**CAMERA:**
+Start: (00:06.00) | End: (00:12.50)
+Close-up on Caller as they speak.
+
+**CALLER (V.O.) (Distorted, Menacing):**
+Start: (00:06.10) | End: (00:12.20)
+"Detective. Ruby Hart has been gone for six hours. You have sixty minutes to find her."
+
+**CAMERA:**
+Start: (00:12.50) | End: (00:15.70)
+Close-up on Nora as they speak.
+
+**NORA (Sharp, Urgent):**
+Start: (00:12.60) | End: (00:15.40)
+"Who is this? Is she alive?"
+
+**CAMERA:**
+Start: (00:15.70) | End: (00:18.20)
+Wide shot of the room.
+
+**ACTION:**
+Start: (00:15.70) | End: (00:18.20)
+Nora snaps her fingers at her partner Leo and points at the phone: trace it.
+
+**CAMERA:**
+Start: (00:18.20) | End: (00:22.40)
+Close-up on Sam as they speak.
+
+**SAM (Nervous, Fast):**
+Start: (00:18.30) | End: (00:22.10)
+"It's bouncing through six countries. I can't lock it."
+
+**CAMERA:**
+Start: (00:22.40) | End: (00:25.40)
+Wide shot of the room.
+
+**ACTION:**
+Start: (00:22.40) | End: (00:25.40)
+A photo arrives: Ruby, tied to a chair, holding today's newspaper.
+
+**CAMERA:**
+Start: (00:25.40) | End: (00:28.90)
+Close-up on Caller as they speak.
+
+**CALLER (V.O.) (Cold, Threatening):**
+Start: (00:25.50) | End: (00:28.60)
+"Come alone. Tell anyone, and she dies."
+
+**CAMERA:**
+Start: (00:28.90) | End: (00:31.40)
+Wide shot of the room.
+
+**ACTION:**
+Start: (00:28.90) | End: (00:31.40)
+Nora grabs her gun from the drawer and checks the magazine.
+
+**CAMERA:**
+Start: (00:31.40) | End: (00:34.90)
+Close-up on Leo as they speak.
+
+**LEO (Stern):**
+Start: (00:31.50) | End: (00:34.60)
+"Nora, this is a trap. Don't go."
+
+**CAMERA:**
+Start: (00:34.90) | End: (00:37.40)
+Close-up on Nora as they speak.
+
+**NORA (Fierce, Determined):**
+Start: (00:35.00) | End: (00:37.10)
+"Then cover me. Quietly."
+
+**CAMERA:**
+Start: (00:37.40) | End: (00:39.90)
+Wide shot of the room.
+
+**SOUND FX:**
+Start: (00:37.40) | End: (00:39.90)
+The line goes dead. A new text appears: I can see you, Detective. Cut to black.
+
+--- SCRIPT END ---

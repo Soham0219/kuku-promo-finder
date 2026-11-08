@@ -1,0 +1,94 @@
+EPISODE NUMBER: Episode 3
+EPISODE LOGLINE: Priya's first big presentation goes wrong when her sister's prank photo pops up on the screen, and Kabir asks the one question she dreaded.
+CONTINUITY NOTES: Later the same week.
+
+--- SCRIPT START ---
+
+SCENE 01
+Scene heading: INT. BOARDROOM - DAY
+Scene start: 00:00.00
+Scene end: 00:36.20
+
+Actions and dialogue:
+
+**CAMERA:**
+Start: (00:00.00) | End: (00:05.50)
+Close-up on Priya as they speak.
+
+**PRIYA (Nervous, Fast):**
+Start: (00:00.10) | End: (00:05.20)
+"Thank you all for coming. Slide one, our new design for the library."
+
+**CAMERA:**
+Start: (00:05.50) | End: (00:08.50)
+Wide shot of the room.
+
+**ACTION:**
+Start: (00:05.50) | End: (00:08.50)
+She clicks. A giant photo of Priya asleep with cucumber slices on her eyes fills the screen.
+
+**CAMERA:**
+Start: (00:08.50) | End: (00:11.40)
+Close-up on Priya as they speak.
+
+**PRIYA (Mortified, Shouting):**
+Start: (00:08.60) | End: (00:11.10)
+"That is not the library!"
+
+**CAMERA:**
+Start: (00:11.40) | End: (00:14.90)
+Close-up on Dev as they speak.
+
+**DEV (Giggling):**
+Start: (00:11.50) | End: (00:14.60)
+"To be fair, it is very relaxing."
+
+**CAMERA:**
+Start: (00:14.90) | End: (00:17.90)
+Wide shot of the room.
+
+**ACTION:**
+Start: (00:14.90) | End: (00:17.90)
+She clicks again. The same photo, now with her sister's caption: Sleeping Beauty, CEO of Naps.
+
+**CAMERA:**
+Start: (00:17.90) | End: (00:22.70)
+Close-up on Priya as they speak.
+
+**PRIYA (Exasperated):**
+Start: (00:18.00) | End: (00:22.40)
+"I am going to kill my sister. Professionally. With a spreadsheet."
+
+**CAMERA:**
+Start: (00:22.70) | End: (00:27.20)
+Close-up on Kabir as they speak.
+
+**KABIR (Deadpan):**
+Start: (00:22.80) | End: (00:26.90)
+"Before you go on, Miss Rao, I have one question."
+
+**CAMERA:**
+Start: (00:27.20) | End: (00:30.70)
+Close-up on Priya as they speak.
+
+**PRIYA (Sheepish):**
+Start: (00:27.30) | End: (00:30.40)
+"Please tell me it's about the budget."
+
+**CAMERA:**
+Start: (00:30.70) | End: (00:34.20)
+Close-up on Kabir as they speak.
+
+**KABIR (Deadpan):**
+Start: (00:30.80) | End: (00:33.90)
+"It's about the date. Who is Rohan?"
+
+**CAMERA:**
+Start: (00:34.20) | End: (00:36.20)
+Wide shot of the room.
+
+**SOUND FX:**
+Start: (00:34.20) | End: (00:36.20)
+Everyone freezes. A beat. Cut to black.
+
+--- SCRIPT END ---

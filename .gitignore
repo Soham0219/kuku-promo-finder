@@ -1,0 +1,12 @@
+# Kuku's input pack is confidential: never commit it.
+data/
+.cache/
+__pycache__/
+*.pyc
+.pytest_cache/
+.streamlit/secrets.toml
+# Raw outputs quote the confidential scripts: share them via the submission (e.g. Drive), not a public repo.
+outputs/
+
+# The PDF builder quotes the confidential scripts; keep it beside the outputs.
+docs/build_solution_doc.py

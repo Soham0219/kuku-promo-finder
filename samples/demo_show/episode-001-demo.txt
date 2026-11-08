@@ -1,0 +1,134 @@
+EPISODE NUMBER: Episode 1
+EPISODE LOGLINE: At the Whitmore Foundation gala, CEO Ethan Cole humiliates his assistant Mia in front of everyone, unaware she is the heiress who owns his company.
+CONTINUITY NOTES: First episode of the demo show (made up for the Promo Finder demo).
+
+--- SCRIPT START ---
+
+SCENE 01
+Scene heading: INT. GRAND BALLROOM - NIGHT
+Scene start: 00:00.00
+Scene end: 00:53.00
+
+Actions and dialogue:
+
+**CAMERA:**
+Start: (00:00.00) | End: (00:03.00)
+Wide shot of the room.
+
+**ACTION:**
+Start: (00:00.00) | End: (00:03.00)
+Mia, in a plain white dress, carries a tray of champagne through the glittering ballroom.
+
+**CAMERA:**
+Start: (00:03.00) | End: (00:06.00)
+Wide shot of the room.
+
+**ACTION:**
+Start: (00:03.00) | End: (00:06.00)
+Vanessa steps into her path and tips a glass of red wine down the front of Mia's dress. Guests gasp.
+
+**CAMERA:**
+Start: (00:06.00) | End: (00:10.50)
+Close-up on Vanessa as they speak.
+
+**VANESSA (Mocking, Cruel):**
+Start: (00:06.10) | End: (00:10.20)
+"Oops. I suppose assistants don't usually get invited to galas."
+
+**CAMERA:**
+Start: (00:10.50) | End: (00:13.70)
+Close-up on Mia as they speak.
+
+**MIA (Quiet, Steady):**
+Start: (00:10.60) | End: (00:13.40)
+"It's fine. I'll clean it up."
+
+**CAMERA:**
+Start: (00:13.70) | End: (00:18.90)
+Close-up on Ethan as they speak.
+
+**ETHAN (Cold, Dismissive):**
+Start: (00:13.80) | End: (00:18.60)
+"Don't bother. You're done here, Mia. Leave your badge at the door."
+
+**CAMERA:**
+Start: (00:18.90) | End: (00:23.40)
+Close-up on Mia as they speak.
+
+**MIA (Shocked, Breathless):**
+Start: (00:19.00) | End: (00:23.10)
+"You're firing me? Because she spilled a drink on me?"
+
+**CAMERA:**
+Start: (00:23.40) | End: (00:27.20)
+Close-up on Ethan as they speak.
+
+**ETHAN (Arrogant, Shouting):**
+Start: (00:23.50) | End: (00:26.90)
+"I'm firing you because you embarrassed me. Security!"
+
+**CAMERA:**
+Start: (00:27.20) | End: (00:29.70)
+Wide shot of the room.
+
+**ACTION:**
+Start: (00:27.20) | End: (00:29.70)
+Two guards grab Mia by the arms and drag her toward the doors.
+
+**CAMERA:**
+Start: (00:29.70) | End: (00:32.60)
+Close-up on Mia as they speak.
+
+**MIA (Fierce, Defiant):**
+Start: (00:29.80) | End: (00:32.30)
+"Take your hands off me."
+
+**CAMERA:**
+Start: (00:32.60) | End: (00:36.40)
+Close-up on Vanessa as they speak.
+
+**VANESSA (Gloating):**
+Start: (00:32.70) | End: (00:36.10)
+"Look at her. She actually thinks she's somebody."
+
+**CAMERA:**
+Start: (00:36.40) | End: (00:42.60)
+Close-up on Mia as they speak.
+
+**MIA (V.O.) (Calm):**
+Start: (00:36.50) | End: (00:42.30)
+"Three years I kept his secrets. Tonight he forgot whose name is on this building."
+
+**CAMERA:**
+Start: (00:42.60) | End: (00:45.60)
+Wide shot of the room.
+
+**ACTION:**
+Start: (00:42.60) | End: (00:45.60)
+The ballroom doors burst open. A grey-haired lawyer strides in, flanked by two associates.
+
+**CAMERA:**
+Start: (00:45.60) | End: (00:48.10)
+Close-up on Mr. Hale as they speak.
+
+**MR. HALE (Booming, Commanding):**
+Start: (00:45.70) | End: (00:47.80)
+"Nobody touches Miss Whitmore."
+
+**CAMERA:**
+Start: (00:48.10) | End: (00:51.00)
+Close-up on Ethan as they speak.
+
+**ETHAN (Shocked, Breathless):**
+Start: (00:48.20) | End: (00:50.70)
+"Whitmore? As in... Whitmore Holdings?"
+
+**CAMERA:**
+Start: (00:51.00) | End: (00:53.00)
+Wide shot of the room.
+
+**SOUND FX:**
+Start: (00:51.00) | End: (00:53.00)
+An ominous sting swells, then a cut to black.
+
+--- SCRIPT END ---

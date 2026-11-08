@@ -1,0 +1,102 @@
+EPISODE NUMBER: Episode 2
+EPISODE LOGLINE: On her first day, Priya hides from her new boss behind a plant and sends a very honest text to the wrong group chat.
+CONTINUITY NOTES: The Monday after Episode 1.
+
+--- SCRIPT START ---
+
+SCENE 01
+Scene heading: INT. OPEN-PLAN OFFICE - DAY
+Scene start: 00:00.00
+Scene end: 00:35.30
+
+Actions and dialogue:
+
+**CAMERA:**
+Start: (00:00.00) | End: (00:03.00)
+Wide shot of the room.
+
+**ACTION:**
+Start: (00:00.00) | End: (00:03.00)
+Priya crouches behind a giant office plant as Kabir walks past her desk.
+
+**CAMERA:**
+Start: (00:03.00) | End: (00:08.50)
+Close-up on Dev as they speak.
+
+**DEV (Amused, Whispering):**
+Start: (00:03.10) | End: (00:08.20)
+"You know he can see you, right? The plant is shorter than you."
+
+**CAMERA:**
+Start: (00:08.50) | End: (00:12.00)
+Close-up on Priya as they speak.
+
+**PRIYA (Panicked, Whispering):**
+Start: (00:08.60) | End: (00:11.70)
+"If I don't move, I don't exist."
+
+**CAMERA:**
+Start: (00:12.00) | End: (00:15.00)
+Wide shot of the room.
+
+**ACTION:**
+Start: (00:12.00) | End: (00:15.00)
+She types a text to her sister: He's cute but terrifying. Pray for me. She hits send.
+
+**CAMERA:**
+Start: (00:15.00) | End: (00:19.20)
+Close-up on Dev as they speak.
+
+**DEV (Alarmed):**
+Start: (00:15.10) | End: (00:18.90)
+"Wait. Which chat did you just send that to?"
+
+**CAMERA:**
+Start: (00:19.20) | End: (00:21.70)
+Wide shot of the room.
+
+**ACTION:**
+Start: (00:19.20) | End: (00:21.70)
+Every phone in the office buzzes at the same time. Twenty heads turn to look at her.
+
+**CAMERA:**
+Start: (00:21.70) | End: (00:25.50)
+Close-up on Priya as they speak.
+
+**PRIYA (Mortified):**
+Start: (00:21.80) | End: (00:25.20)
+"Please tell me that was the family chat."
+
+**CAMERA:**
+Start: (00:25.50) | End: (00:29.30)
+Close-up on Dev as they speak.
+
+**DEV (Deadpan):**
+Start: (00:25.60) | End: (00:29.00)
+"It was the all-staff chat. He's an admin."
+
+**CAMERA:**
+Start: (00:29.30) | End: (00:31.80)
+Wide shot of the room.
+
+**ACTION:**
+Start: (00:29.30) | End: (00:31.80)
+Kabir stops, reads his phone, and slowly turns around.
+
+**CAMERA:**
+Start: (00:31.80) | End: (00:33.30)
+Close-up on Kabir as they speak.
+
+**KABIR (Deadpan):**
+Start: (00:31.90) | End: (00:33.00)
+"Terrifying?"
+
+**CAMERA:**
+Start: (00:33.30) | End: (00:35.30)
+Wide shot of the room.
+
+**SOUND FX:**
+Start: (00:33.30) | End: (00:35.30)
+Crickets. A long awkward silence. Cut to black.
+
+--- SCRIPT END ---

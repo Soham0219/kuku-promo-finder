@@ -1,0 +1,110 @@
+EPISODE NUMBER: Episode 1
+EPISODE LOGLINE: Priya sits down at the wrong table for a blind date and spends twenty minutes insulting a stranger who turns out to be her new boss.
+CONTINUITY NOTES: First episode of the made-up comedy demo (written for the Promo Finder demo).
+
+--- SCRIPT START ---
+
+SCENE 01
+Scene heading: INT. BUSY CAFE - DAY
+Scene start: 00:00.00
+Scene end: 00:47.80
+
+Actions and dialogue:
+
+**CAMERA:**
+Start: (00:00.00) | End: (00:03.00)
+Wide shot of the room.
+
+**ACTION:**
+Start: (00:00.00) | End: (00:03.00)
+Priya rushes into the cafe, trips over a chair leg and lands in the seat opposite a man in a suit.
+
+**CAMERA:**
+Start: (00:03.00) | End: (00:10.10)
+Close-up on Priya as they speak.
+
+**PRIYA (Flustered, Fast):**
+Start: (00:03.10) | End: (00:09.80)
+"Hi! Sorry! You must be Rohan. My sister said you'd be the one who looks like an accountant."
+
+**CAMERA:**
+Start: (00:10.10) | End: (00:12.30)
+Close-up on Kabir as they speak.
+
+**KABIR (Deadpan):**
+Start: (00:10.20) | End: (00:12.00)
+"I'm not Rohan."
+
+**CAMERA:**
+Start: (00:12.30) | End: (00:16.50)
+Close-up on Priya as they speak.
+
+**PRIYA (Sheepish):**
+Start: (00:12.40) | End: (00:16.20)
+"Oh. Okay. Well, you do look like an accountant."
+
+**CAMERA:**
+Start: (00:16.50) | End: (00:19.00)
+Wide shot of the room.
+
+**ACTION:**
+Start: (00:16.50) | End: (00:19.00)
+She reaches for the sugar and knocks his coffee straight into his lap.
+
+**CAMERA:**
+Start: (00:19.00) | End: (00:24.50)
+Close-up on Priya as they speak.
+
+**PRIYA (Mortified):**
+Start: (00:19.10) | End: (00:24.20)
+"Oops. Oh no. Oh no, no, no. I'll pay for the dry cleaning."
+
+**CAMERA:**
+Start: (00:24.50) | End: (00:29.00)
+Close-up on Kabir as they speak.
+
+**KABIR (Deadpan):**
+Start: (00:24.60) | End: (00:28.70)
+"It's fine. I have a spare suit in my office."
+
+**CAMERA:**
+Start: (00:29.00) | End: (00:35.20)
+Close-up on Priya as they speak.
+
+**PRIYA (Giggling, Awkward):**
+Start: (00:29.10) | End: (00:34.90)
+"Who keeps a spare suit at work? That's so sad. Who's your boss, a robot?"
+
+**CAMERA:**
+Start: (00:35.20) | End: (00:38.10)
+Close-up on Kabir as they speak.
+
+**KABIR (Dry):**
+Start: (00:35.30) | End: (00:37.80)
+"I don't have a boss."
+
+**CAMERA:**
+Start: (00:38.10) | End: (00:40.60)
+Wide shot of the room.
+
+**ACTION:**
+Start: (00:38.10) | End: (00:40.60)
+He slides a business card across the table. Priya reads it and freezes.
+
+**CAMERA:**
+Start: (00:40.60) | End: (00:45.80)
+Close-up on Kabir as they speak.
+
+**KABIR (Deadpan):**
+Start: (00:40.70) | End: (00:45.50)
+"Welcome to the team, Miss Rao. Nine a.m. Monday. Don't be late."
+
+**CAMERA:**
+Start: (00:45.80) | End: (00:47.80)
+Wide shot of the room.
+
+**SOUND FX:**
+Start: (00:45.80) | End: (00:47.80)
+A record scratch. Awkward silence. Smash cut to black.
+
+--- SCRIPT END ---

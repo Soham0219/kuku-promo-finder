@@ -1,0 +1,110 @@
+EPISODE NUMBER: Episode 2
+EPISODE LOGLINE: Nora follows the caller's directions to a warehouse, finds a ringing phone and a bomb timer, and gets a clue pointing back to her own precinct.
+CONTINUITY NOTES: Picks up directly from Episode 1.
+
+--- SCRIPT START ---
+
+SCENE 01
+Scene heading: INT. ABANDONED WAREHOUSE - NIGHT
+Scene start: 00:00.00
+Scene end: 00:32.40
+
+Actions and dialogue:
+
+**CAMERA:**
+Start: (00:00.00) | End: (00:03.50)
+Wide shot of the room.
+
+**ACTION:**
+Start: (00:00.00) | End: (00:03.50)
+Nora moves through the dark warehouse, gun raised, flashlight cutting through the dust.
+
+**CAMERA:**
+Start: (00:03.50) | End: (00:07.00)
+Close-up on Nora as they speak.
+
+**NORA (Hushed, Tense):**
+Start: (00:03.60) | End: (00:06.70)
+"Ruby? Ruby, police. Can you hear me?"
+
+**CAMERA:**
+Start: (00:07.00) | End: (00:08.50)
+Wide shot of the room.
+
+**SOUND FX:**
+Start: (00:07.00) | End: (00:08.50)
+A phone rings somewhere in the dark.
+
+**CAMERA:**
+Start: (00:08.50) | End: (00:10.50)
+Wide shot of the room.
+
+**ACTION:**
+Start: (00:08.50) | End: (00:10.50)
+She finds a phone taped to a pillar and answers it.
+
+**CAMERA:**
+Start: (00:10.50) | End: (00:13.40)
+Close-up on Caller as they speak.
+
+**CALLER (V.O.) (Mocking, Cruel):**
+Start: (00:10.60) | End: (00:13.10)
+"Wrong building, Detective. Look down."
+
+**CAMERA:**
+Start: (00:13.40) | End: (00:15.90)
+Wide shot of the room.
+
+**ACTION:**
+Start: (00:13.40) | End: (00:15.90)
+A red timer under her feet blinks to life: 00:30. It starts beeping.
+
+**CAMERA:**
+Start: (00:15.90) | End: (00:18.10)
+Close-up on Nora as they speak.
+
+**NORA (Shouting, Panicked):**
+Start: (00:16.00) | End: (00:17.80)
+"Bomb! Everyone out!"
+
+**CAMERA:**
+Start: (00:18.10) | End: (00:21.10)
+Wide shot of the room.
+
+**ACTION:**
+Start: (00:18.10) | End: (00:21.10)
+She sprints for the door and dives out as the warehouse explodes behind her.
+
+**CAMERA:**
+Start: (00:21.10) | End: (00:23.60)
+Close-up on Leo as they speak.
+
+**LEO (Breathless, Alarmed):**
+Start: (00:21.20) | End: (00:23.30)
+"Nora! Are you hurt?"
+
+**CAMERA:**
+Start: (00:23.60) | End: (00:26.60)
+Wide shot of the room.
+
+**ACTION:**
+Start: (00:23.60) | End: (00:26.60)
+Her phone buzzes again. Check the CCTV at your own precinct. 10:42 p.m.
+
+**CAMERA:**
+Start: (00:26.60) | End: (00:30.40)
+Close-up on Nora as they speak.
+
+**NORA (Stunned):**
+Start: (00:26.70) | End: (00:30.10)
+"Our precinct? Why would he send me home?"
+
+**CAMERA:**
+Start: (00:30.40) | End: (00:32.40)
+Wide shot of the room.
+
+**SOUND FX:**
+Start: (00:30.40) | End: (00:32.40)
+An ominous sting, then a cut to black.
+
+--- SCRIPT END ---
